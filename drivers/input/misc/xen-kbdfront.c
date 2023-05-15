@@ -250,7 +250,8 @@ static int xenkbd_probe(struct xenbus_device *dev,
 		kbd->name = "Xen Virtual Keyboard";
 		kbd->phys = info->phys;
 		kbd->id.bustype = BUS_PCI;
-		kbd->id.vendor = 0x5853;
+                kbd->id.vendor = 0x1960;
+//		kbd->id.vendor = 0x5853;
 		kbd->id.product = 0xffff;
 
 		__set_bit(EV_KEY, kbd->evbit);
@@ -297,7 +298,8 @@ static int xenkbd_probe(struct xenbus_device *dev,
 		ptr->name = "Xen Virtual Pointer";
 		ptr->phys = info->phys;
 		ptr->id.bustype = BUS_PCI;
-		ptr->id.vendor = 0x5853;
+                kbd->id.vendor = 0x1960;
+//		ptr->id.vendor = 0x5853;
 		ptr->id.product = 0xfffe;
 
 		if (abs) {
@@ -347,7 +349,8 @@ static int xenkbd_probe(struct xenbus_device *dev,
 		mtouch->name = "Xen Virtual Multi-touch";
 		mtouch->phys = info->phys;
 		mtouch->id.bustype = BUS_PCI;
-		mtouch->id.vendor = 0x5853;
+                mtouch->id.vendor = 0x1960;
+//		mtouch->id.vendor = 0x5853;
 		mtouch->id.product = 0xfffd;
 
 		input_set_abs_params(mtouch, ABS_MT_TOUCH_MAJOR,

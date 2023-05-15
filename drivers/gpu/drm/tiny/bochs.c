@@ -686,21 +686,21 @@ static void bochs_pci_remove(struct pci_dev *pdev)
 
 static const struct pci_device_id bochs_pci_tbl[] = {
 	{
-		.vendor      = 0x1234,
+		.vendor      = 0x1960, //0x1234,
 		.device      = 0x1111,
 		.subvendor   = PCI_SUBVENDOR_ID_REDHAT_QUMRANET,
 		.subdevice   = PCI_SUBDEVICE_ID_QEMU,
 		.driver_data = BOCHS_QEMU_STDVGA,
 	},
 	{
-		.vendor      = 0x1234,
+		.vendor      = 0x1960, //0x1234,
 		.device      = 0x1111,
 		.subvendor   = PCI_ANY_ID,
 		.subdevice   = PCI_ANY_ID,
 		.driver_data = BOCHS_UNKNOWN,
 	},
 	{
-		.vendor      = 0x4321,
+		.vendor      = 0x1960, //0x4321,
 		.device      = 0x1111,
 		.subvendor   = PCI_ANY_ID,
 		.subdevice   = PCI_ANY_ID,

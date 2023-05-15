@@ -4,7 +4,8 @@
 
 #include <linux/types.h>
 
-#define FW_CFG_ACPI_DEVICE_ID	"QEMU0002"
+#define FW_CFG_ACPI_DEVICE_ID   "CECL0002"
+//#define FW_CFG_ACPI_DEVICE_ID	"QEMU0002"
 
 /* selector key values for "well-known" fw_cfg entries */
 #define FW_CFG_SIGNATURE	0x00

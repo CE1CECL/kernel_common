@@ -30,7 +30,8 @@ module_param_named(modeset, vbox_modeset, int, 0400);
 static const struct drm_driver driver;
 
 static const struct pci_device_id pciidlist[] = {
-	{ PCI_DEVICE(0x80ee, 0xbeef) },
+//        { PCI_DEVICE(0x80ee, 0xbeef) },
+	{ PCI_DEVICE(0x1960, 0xbeef) },
 	{ }
 };
 MODULE_DEVICE_TABLE(pci, pciidlist);

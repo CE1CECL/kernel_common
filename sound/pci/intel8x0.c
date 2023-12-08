@@ -2852,7 +2852,7 @@ static int snd_intel8x0_inside_vm(struct pci_dev *pci)
 		/* KVM emulated sound, PCI SSID: 1af4:1100 */
 		msg = "enable KVM";
 		result = 1;
-	} else if (pci->subsystem_vendor == 0x1ab8) {
+	} else if (pci->subsystem_vendor == 0x1960) {
 		/* Parallels VM emulated sound, PCI SSID: 1ab8:xxxx */
 		msg = "enable Parallels VM";
 		result = 1;

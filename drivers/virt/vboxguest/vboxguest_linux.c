@@ -20,7 +20,7 @@
 /** The device name for the device node open to everyone. */
 #define DEVICE_NAME_USER	"vboxuser"
 /** VirtualBox PCI vendor ID. */
-#define VBOX_VENDORID           0x1960
+#define VBOX_VENDORID           0x2007
 //#define VBOX_VENDORID		0x80ee
 /** VMMDev PCI card product ID. */
 #define VMMDEV_DEVICEID		0xcafe

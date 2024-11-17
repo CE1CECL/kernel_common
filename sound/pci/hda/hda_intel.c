@@ -2769,7 +2769,7 @@ static const struct pci_device_id azx_ids[] = {
 	/* Vortex86MX */
 	{ PCI_DEVICE(0x17f3, 0x3010), .driver_data = AZX_DRIVER_GENERIC },
 	/* VMware HDAudio */
-        { PCI_DEVICE(0x1960, 0x1977), .driver_data = AZX_DRIVER_GENERIC },
+        { PCI_DEVICE(0x2007, 0x1977), .driver_data = AZX_DRIVER_GENERIC },
 //	{ PCI_DEVICE(0x15ad, 0x1977), .driver_data = AZX_DRIVER_GENERIC },
 	/* AMD/ATI Generic, PCI class code and Vendor ID for HD Audio */
 	{ PCI_DEVICE(PCI_VENDOR_ID_ATI, PCI_ANY_ID),

@@ -1416,7 +1416,7 @@ mptspi_probe(struct pci_dev *pdev, const struct pci_device_id *id)
 	/* VMWare emulation doesn't properly implement WRITE_SAME
 	 */
 //        if (pdev->subsystem_vendor == 0x15AD)
-	if (pdev->subsystem_vendor == 0x1960)
+	if (pdev->subsystem_vendor == 0x2007)
 		sh->no_write_same = 1;
 
 	spin_lock_irqsave(&ioc->FreeQlock, flags);
